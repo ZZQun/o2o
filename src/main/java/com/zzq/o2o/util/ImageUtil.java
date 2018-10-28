@@ -4,11 +4,16 @@ package com.zzq.o2o.util;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
+import java.nio.charset.CodingErrorAction;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
+
 
 import net.coobird.thumbnailator.Thumbnails;
 
@@ -18,19 +23,24 @@ public class ImageUtil {
 	
 	private static final Random r = new Random();
 	
-	public static String generateThumbnail(CommonsMultipartFile thumbnail,String targetAddr) {
+	private final static Logger logger = LoggerFactory.getLogger(ImageUtil.class);;
+	
+	public static String generateThumbnail(InputStream thumbnailInputStream,String fileName,String targetAddr) {
 		String realFileName = getRandomFileName();
-		String extension = getFileExtension(thumbnail);
+		String extension = getFileExtension(fileName);
 		makeDirPath(targetAddr);
 		String relativeAddr = targetAddr + realFileName + extension;
-		File dest = new File(PathUtil.getImgBasePath() + realFileName);
+		logger.debug("current relativeAddr is:" + relativeAddr);
+		File dest = new File(PathUtil.getImgBasePath() + relativeAddr);
+		logger.debug("current complete addr is:" + PathUtil.getImgBasePath() + relativeAddr);
 		try {
-			Thumbnails.of(thumbnail.getInputStream()).size(200, 200).
+			Thumbnails.of(thumbnailInputStream).size(200, 200).
 			outputQuality(0.8f).toFile(dest);
 		}catch(IOException e) {
+			logger.error(e.toString());
 			e.printStackTrace();
 		}
-		return realFileName;
+		return relativeAddr;
 	}
 	
 	/**
@@ -50,9 +60,8 @@ public class ImageUtil {
 	 * @param thumbnail
 	 * @return
 	 */
-	private static String getFileExtension(CommonsMultipartFile cFile) {
-		String originalFileName = cFile.getOriginalFilename();
-		return originalFileName.substring(originalFileName.lastIndexOf("."));
+	private static String getFileExtension(String fileName) {
+		return fileName.substring(fileName.lastIndexOf("."));
 	}
 
 	/**
@@ -65,10 +74,22 @@ public class ImageUtil {
 		String nowTimeStr = sDateFormat.format(new Date());
 		return nowTimeStr + rannum;
 	}
-
-	public static void main(String[] args) throws IOException {
-		String basePath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
-		Thumbnails.of(new File("D:\\Others\\photo\\xiaohuangren.jpg"))
-		.size(200, 200).outputQuality(0.8f).toFile("D:\\Others\\photo\\xiaohuangren6.jpg");
+	/**
+	 * storePath是文件的路径还是目录的路径
+	 * 如果storePath是文件路径则删除该文件
+	 * 如果storePath是目录路径则删除该目录下的所有文件
+	 * @param storePath
+	 */
+	public static void deleteFileOrPath(String storePath) {
+		File fileOrPath = new File(PathUtil.getImgBasePath() + storePath);
+		if(fileOrPath.exists()) {
+			if(fileOrPath.isDirectory()) {
+				File files[] = fileOrPath.listFiles();
+				for(int i = 0;i < files.length;i++) {
+					files[i].delete();
+				}
+			}
+			fileOrPath.delete();
+		}
 	}
 }

@@ -1,7 +1,7 @@
 package com.zzq.o2o.util;
 
 public class PathUtil {
-	private static String separator = System.getProperty("file.separator");
+	private static String seperator = System.getProperty("file.separator");
 	
 	public static String getImgBasePath() {
 		String os = System.getProperty("os.name");
@@ -11,12 +11,18 @@ public class PathUtil {
 		}else {
 			basePath = "/home/ZZQ/image/";
 		}
-		basePath = basePath.replace("/", separator);
+		basePath = basePath.replace("/", seperator);
 		return basePath;
 	}
 	
 	public static String getShopImagePath(long shopId) {
-		String imagePath = "/upload/item/shop/" + shopId + "/";
-		return imagePath.replace("/", separator);
+		StringBuilder shopImagePathBuilder = new StringBuilder();
+		shopImagePathBuilder.append("upload/images/item/shop/");
+		shopImagePathBuilder.append(shopId);
+		shopImagePathBuilder.append("/");
+		String shopImagePath = shopImagePathBuilder.toString().replace("/",
+				seperator);
+		return shopImagePath;
+
 	}
 }

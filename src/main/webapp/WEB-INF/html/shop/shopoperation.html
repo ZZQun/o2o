@@ -53,7 +53,7 @@
 								<div class="item-inner">
 									<div class="item-title label">商铺名称</div>
 									<div class="item-input">
-										<input id="shop-name" type="text" placeholder="商铺名称">
+										<input id="shop-name" type="text" placeholder="请输入商铺名称">
 									</div>
 								</div>
 							</div>
@@ -85,7 +85,7 @@
 								<div class="item-inner">
 									<div class="item-title label">详细地址</div>
 									<div class="item-input">
-										<input id="shop-addr" type="text" placeholder="详细地址">
+										<input id="shop-addr" type="text" placeholder="请输入详细地址">
 									</div>
 								</div>
 							</div>
@@ -95,7 +95,7 @@
 								<div class="item-inner">
 									<div class="item-title label">联系电话</div>
 									<div class="item-input">
-										<input id="shop-phone" type="text" placeholder="联系电话">
+										<input id="shop-phone" type="text" placeholder="请输入联系电话">
 									</div>
 								</div>
 							</div>
@@ -115,7 +115,19 @@
 								<div class="item-inner">
 									<div class="item-title label">商铺简介</div>
 									<div class="item-input">
-										<textarea id="shop-desc" placeholder="商铺简介"></textarea>
+										<textarea id="shop-desc" placeholder="请输入商铺简介"></textarea>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">验证码</div>
+										<input id="j_captcha" type="text" placeholder="请输入验证码">
+									<div class="item-input">
+										<img id="captcha_img" alt="点击更换" title="点击更换"
+											onclick="changeVerifyCode(this)" src="../Kaptcha">
 									</div>
 								</div>
 							</div>
@@ -140,5 +152,6 @@
     <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
     <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
 	<script type="text/javascript" src='../resources/js/shop/shopoperation.js' charset='utf-8'></script>
+	<script type="text/javascript" src='../resources/js/common/common.js' charset='utf-8'></script>
 </body>
 </html>

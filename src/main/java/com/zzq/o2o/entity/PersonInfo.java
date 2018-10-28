@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class PersonInfo {
 	private Long userId;
+	
 	private String name;
 	
 	private String profileImg;

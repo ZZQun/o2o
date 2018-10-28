@@ -1,19 +1,14 @@
-2018-10-26 21:53:12.374 [main] DEBUG com.zzq.o2o.dao.ShopDao.insertShop - ==>  Preparing: insert into tb_shop(owner_id,area_id,shop_category_id,shop_name ,shop_desc,shop_addr,phone,shop_img，priority,create_time ,last_edit_time,enable_status,advice) values (?,?,?,? ,?,?,?,?,?,?,? ,?,?) 
-2018-10-26 21:58:09.459 [main] DEBUG com.zzq.o2o.dao.ShopDao.insertShop - ==>  Preparing: insert into tb_shop(owner_id,area_id,shop_category_id,shop_name ,shop_desc,shop_addr,phone,shop_img，priority,create_time ,last_edit_time,enable_status,advice) values (?,?,?,? ,?,?,?,?,?,?,? ,?,?) 
-2018-10-26 21:58:09.495 [main] DEBUG com.zzq.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 2(Integer), 1(Long), test(String), test(String), test(String), test(String), test(String), null, 2018-10-26 21:58:09.179(Timestamp), null, 1(Integer), 审核中(String)
-2018-10-26 22:00:17.056 [main] DEBUG com.zzq.o2o.dao.ShopDao.insertShop - ==>  Preparing: insert into tb_shop(owner_id,area_id,shop_category_id,shop_name ,shop_desc,shop_addr,phone,shop_img，priority,create_time ,last_edit_time,enable_status,advice) values (?,?,?, ?,?,?,?,?,?,?,?, ?,?) 
-2018-10-26 22:00:17.089 [main] DEBUG com.zzq.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 2(Integer), 1(Long), test(String), test(String), test(String), test(String), test(String), null, 2018-10-26 22:00:16.782(Timestamp), null, 1(Integer), 审核中(String)
-2018-10-26 22:05:32.655 [main] DEBUG com.zzq.o2o.dao.ShopDao.insertShop - ==>  Preparing: insert into tb_shop(owner_id,area_id,shop_category_id,shop_name ,shop_desc,shop_addr,phone,shop_img,priority,create_time ,last_edit_time,enable_status,advice) values (?,?,?, ?,?,?,?,?,?,?,?, ?,?) 
-2018-10-26 22:05:32.688 [main] DEBUG com.zzq.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 2(Integer), 1(Long), test(String), test(String), test(String), test(String), test(String), null, 2018-10-26 22:05:32.403(Timestamp), null, 1(Integer), 审核中(String)
-2018-10-26 22:15:38.207 [main] DEBUG com.zzq.o2o.dao.ShopDao.insertShop - ==>  Preparing: insert into tb_shop(owner_id,area_id,shop_category_id,shop_name ,shop_desc,shop_addr,phone,shop_img,priority,create_time ,last_edit_time,enable_status,advice) values (?,?,?, ?,?,?,?,?,?,?,?, ?,?) 
-2018-10-26 22:15:38.236 [main] DEBUG com.zzq.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 2(Integer), 1(Long), test(String), test(String), test(String), test(String), test(String), null, 2018-10-26 22:15:37.939(Timestamp), null, 1(Integer), 审核中(String)
-2018-10-26 22:15:38.242 [main] DEBUG com.zzq.o2o.dao.ShopDao.insertShop - <==    Updates: 1
-2018-10-26 23:37:28.151 [main] DEBUG com.zzq.o2o.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name=?, shop_desc=?, shop_addr=?, last_edit_time=? where shop_id=? 
-2018-10-26 23:37:28.181 [main] DEBUG com.zzq.o2o.dao.ShopDao.updateShop - ==> Parameters: 老狗奶茶店(String), 老狗开的奶茶店！(String), C612(String), 2018-10-26 23:37:27.88(Timestamp), 1(Long)
-2018-10-26 23:37:28.189 [main] DEBUG com.zzq.o2o.dao.ShopDao.updateShop - <==    Updates: 0
-2018-10-26 23:38:25.696 [main] DEBUG com.zzq.o2o.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name=?, shop_desc=?, shop_addr=?, last_edit_time=? where shop_id=? 
-2018-10-26 23:38:25.724 [main] DEBUG com.zzq.o2o.dao.ShopDao.updateShop - ==> Parameters: 老狗奶茶店(String), 老狗开的奶茶店！(String), C612(String), 2018-10-26 23:38:25.413(Timestamp), 1(Long)
-2018-10-26 23:38:25.726 [main] DEBUG com.zzq.o2o.dao.ShopDao.updateShop - <==    Updates: 0
-2018-10-26 23:41:47.679 [main] DEBUG com.zzq.o2o.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name=?, shop_desc=?, shop_addr=?, last_edit_time=? where shop_id=? 
-2018-10-26 23:41:47.704 [main] DEBUG com.zzq.o2o.dao.ShopDao.updateShop - ==> Parameters: 老狗奶茶店(String), 老狗开的奶茶店！(String), C612(String), 2018-10-26 23:41:47.403(Timestamp), 2(Long)
-2018-10-26 23:41:47.716 [main] DEBUG com.zzq.o2o.dao.ShopDao.updateShop - <==    Updates: 1
+2018-10-28 11:36:08.128 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:\upload\images\item\shop\7\201810281136083103.jpg
+2018-10-28 11:36:08.132 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\\upload\images\item\shop\7\201810281136083103.jpg
+2018-10-28 11:38:48.719 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\8\2018102811384887797.jpg
+2018-10-28 11:38:48.721 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\8\2018102811384887797.jpg
+2018-10-28 11:42:51.355 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\9\2018102811425175193.jpg
+2018-10-28 11:42:51.358 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\9\2018102811425175193.jpg
+2018-10-28 11:48:36.352 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\10\2018102811483680694.jpg
+2018-10-28 11:48:36.354 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\10\2018102811483680694.jpg
+2018-10-28 11:49:26.112 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\11\2018102811492662761.jpg
+2018-10-28 11:49:26.114 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\11\2018102811492662761.jpg
+2018-10-28 11:53:03.789 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\12\201810281153037668.jpg
+2018-10-28 11:53:03.791 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\12\201810281153037668.jpg
+2018-10-28 21:26:38.501 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\13\2018102821263817112.png
+2018-10-28 21:26:38.503 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\13\2018102821263817112.png
