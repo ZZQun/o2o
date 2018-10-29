@@ -3,6 +3,7 @@ package com.zzq.o2o.dao;
 import static org.junit.Assert.assertEquals;
 
 import java.util.Date;
+import java.util.List;
 
 import org.junit.Ignore;
 import org.junit.Test;
@@ -19,6 +20,15 @@ public class ShopDaoTest extends BaseTest{
 	private ShopDao shopDao;
 	
 	@Test
+	public void testQueryShopListAndCount() {
+		Shop shopCondition = new Shop();
+		shopCondition.setShopName("test2");
+		List<Shop> shopList1 = shopDao.queryShopList(shopCondition, 0, 5);
+		System.out.println("店铺列表的大小:" + shopList1.size());
+	}
+	
+	@Test
+	@Ignore
 	public void testQueryByShopId() {
 		long shopId = 2L;
 		Shop shop = shopDao.queryByShopId(shopId);

@@ -12,11 +12,19 @@ import com.zzq.o2o.exception.ShopOperationException;
 
 public interface ShopService {
 	/**
+	 * 根据shopCondition分页返回列表数据
+	 * @param shopCondition
+	 * @param pageIndex
+	 * @param pageSize
+	 * @return
+	 */
+	public ShopExecution getShopList(Shop shopCondition,int pageIndex,int pageSize);
+	/**
 	 * 通过店铺id获取店铺信息
 	 * @param shopId
 	 * @return
 	 */
-	Shop getByShopId(long shopId);
+	public Shop getByShopId(long shopId);
 	/**
 	 * 更新点店铺信息，包括图片处理
 	 * @param shop
@@ -25,7 +33,7 @@ public interface ShopService {
 	 * @return
 	 * @throws ShopOperationException
 	 */
-	ShopExecution modifyShop(Shop shop,InputStream shopImgInputStream,String fileName) throws ShopOperationException;
+	public ShopExecution modifyShop(Shop shop,InputStream shopImgInputStream,String fileName) throws ShopOperationException;
 	/**
 	 * 注册店铺信息，包括图片处理
 	 * @param shop
@@ -34,5 +42,5 @@ public interface ShopService {
 	 * @return
 	 * @throws ShopOperationException
 	 */
-	ShopExecution addShop(Shop shop,InputStream shopImgInputStream,String fileName) throws ShopOperationException; 
+	public ShopExecution addShop(Shop shop,InputStream shopImgInputStream,String fileName) throws ShopOperationException; 
 }
