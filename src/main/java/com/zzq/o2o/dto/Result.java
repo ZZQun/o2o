@@ -45,11 +45,11 @@ public class Result<T> {
 		this.success = success;
 	}
 
-	public T getData() {
+	public T getdata() {
 		return data;
 	}
 
-	public void setData(T data) {
+	public void setdata(T data) {
 		this.data = data;
 	}
 

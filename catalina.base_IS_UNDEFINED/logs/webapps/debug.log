@@ -1,14 +1,60 @@
-2018-10-28 11:36:08.128 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:\upload\images\item\shop\7\201810281136083103.jpg
-2018-10-28 11:36:08.132 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\\upload\images\item\shop\7\201810281136083103.jpg
-2018-10-28 11:38:48.719 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\8\2018102811384887797.jpg
-2018-10-28 11:38:48.721 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\8\2018102811384887797.jpg
-2018-10-28 11:42:51.355 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\9\2018102811425175193.jpg
-2018-10-28 11:42:51.358 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\9\2018102811425175193.jpg
-2018-10-28 11:48:36.352 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\10\2018102811483680694.jpg
-2018-10-28 11:48:36.354 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\10\2018102811483680694.jpg
-2018-10-28 11:49:26.112 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\11\2018102811492662761.jpg
-2018-10-28 11:49:26.114 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\11\2018102811492662761.jpg
-2018-10-28 11:53:03.789 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\12\201810281153037668.jpg
-2018-10-28 11:53:03.791 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\12\201810281153037668.jpg
-2018-10-28 21:26:38.501 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\13\2018102821263817112.png
-2018-10-28 21:26:38.503 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\13\2018102821263817112.png
+2018-10-31 11:02:51.010 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111025051085.jpg
+2018-10-31 11:02:51.010 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111025051085.jpg
+2018-10-31 11:02:51.326 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111025187690.jpg
+2018-10-31 11:02:51.326 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111025187690.jpg
+2018-10-31 11:02:51.364 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111025173867.jpg
+2018-10-31 11:02:51.364 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111025173867.jpg
+2018-10-31 11:04:34.089 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111043459721.jpg
+2018-10-31 11:04:34.089 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111043459721.jpg
+2018-10-31 11:04:34.226 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111043476552.jpg
+2018-10-31 11:04:34.226 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111043476552.jpg
+2018-10-31 11:04:34.273 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111043464853.jpg
+2018-10-31 11:04:34.273 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111043464853.jpg
+2018-10-31 11:05:58.917 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111055873649.jpg
+2018-10-31 11:05:58.917 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111055873649.jpg
+2018-10-31 11:05:59.039 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111055990669.jpg
+2018-10-31 11:05:59.039 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111055990669.jpg
+2018-10-31 11:05:59.086 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111055933683.jpg
+2018-10-31 11:05:59.086 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111055933683.jpg
+2018-10-31 11:07:27.472 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111072733673.jpg
+2018-10-31 11:07:27.472 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111072733673.jpg
+2018-10-31 11:07:27.656 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111072784620.jpg
+2018-10-31 11:07:27.672 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111072784620.jpg
+2018-10-31 11:07:27.710 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111072721199.jpg
+2018-10-31 11:07:27.710 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111072721199.jpg
+2018-10-31 11:12:16.157 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111121670986.jpg
+2018-10-31 11:12:16.157 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111121670986.jpg
+2018-10-31 11:12:16.319 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111121633730.jpg
+2018-10-31 11:12:16.319 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111121633730.jpg
+2018-10-31 11:12:16.357 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111121629644.jpg
+2018-10-31 11:12:16.357 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111121629644.jpg
+2018-10-31 11:14:50.388 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111145039393.jpg
+2018-10-31 11:14:50.391 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111145039393.jpg
+2018-10-31 11:14:50.581 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111145069066.jpg
+2018-10-31 11:14:50.582 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111145069066.jpg
+2018-10-31 11:14:50.621 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111145057456.jpg
+2018-10-31 11:14:50.621 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111145057456.jpg
+2018-10-31 11:16:01.069 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\201810311116014392.jpg
+2018-10-31 11:16:01.069 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\201810311116014392.jpg
+2018-10-31 11:16:01.222 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\201810311116013717.jpg
+2018-10-31 11:16:01.222 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\201810311116013717.jpg
+2018-10-31 11:16:01.254 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111160122446.jpg
+2018-10-31 11:16:01.254 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111160122446.jpg
+2018-10-31 11:24:09.686 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111240925956.jpg
+2018-10-31 11:24:09.703 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111240925956.jpg
+2018-10-31 11:24:09.855 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111240986583.jpg
+2018-10-31 11:24:09.855 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111240986583.jpg
+2018-10-31 11:24:09.902 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111240989158.jpg
+2018-10-31 11:24:09.902 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111240989158.jpg
+2018-10-31 11:24:46.125 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111244633400.jpg
+2018-10-31 11:24:46.126 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111244633400.jpg
+2018-10-31 11:24:46.260 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\201810311124467490.jpg
+2018-10-31 11:24:46.260 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\201810311124467490.jpg
+2018-10-31 11:24:46.291 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111244613091.jpg
+2018-10-31 11:24:46.291 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111244613091.jpg
+2018-10-31 11:26:49.257 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111264944584.jpg
+2018-10-31 11:26:49.257 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111264944584.jpg
+2018-10-31 11:26:49.410 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\201810311126491938.jpg
+2018-10-31 11:26:49.410 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\201810311126491938.jpg
+2018-10-31 11:26:49.457 [main] DEBUG com.zzq.o2o.util.ImageUtil - current relativeAddr is:upload\images\item\shop\2\2018103111264947341.jpg
+2018-10-31 11:26:49.457 [main] DEBUG com.zzq.o2o.util.ImageUtil - current complete addr is:D:\Others\photo\upload\images\item\shop\2\2018103111264947341.jpg

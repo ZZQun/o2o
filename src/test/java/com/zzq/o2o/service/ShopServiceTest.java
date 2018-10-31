@@ -15,6 +15,7 @@ import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 import com.zzq.o2o.BaseTest;
 import com.zzq.o2o.dao.ShopDao;
+import com.zzq.o2o.dto.ImageHolder;
 import com.zzq.o2o.dto.ShopExecution;
 import com.zzq.o2o.entity.Area;
 import com.zzq.o2o.entity.PersonInfo;
@@ -47,7 +48,8 @@ public class ShopServiceTest extends BaseTest{
 		shop.setShopName("小老狗");
 		File shopImg = new File("D:\\Others\\photo\\xiaohuangren.jpg");
 		InputStream is = new FileInputStream(shopImg);
-		ShopExecution shopExecution = shopService.modifyShop(shop, is, "sky.png");
+		ImageHolder imageHolder = new ImageHolder("xiaohuangren.jpg",is);
+		ShopExecution shopExecution = shopService.modifyShop(shop,imageHolder);
 		System.out.println("新的图片地址：" + shopExecution.getShop().getShopImg());
 	}
 	
@@ -73,7 +75,8 @@ public class ShopServiceTest extends BaseTest{
 		shop.setAdvice("审核中");
 		File shopImg = new File("D:\\Others\\photo\\xiaohuangren.jpg");
 		InputStream is = new FileInputStream(shopImg);
-		ShopExecution se = shopService.addShop(shop, is, shopImg.getName());
+		ImageHolder imageHolder = new ImageHolder(shopImg.getName(),is);
+		ShopExecution se = shopService.addShop(shop,imageHolder);
 		assertEquals(ShopStateEnum.CHECK.getState(), se.getState());
 	}
 	

@@ -14,6 +14,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
+import com.zzq.o2o.dto.ImageHolder;
 
 import net.coobird.thumbnailator.Thumbnails;
 
@@ -25,17 +26,35 @@ public class ImageUtil {
 	
 	private final static Logger logger = LoggerFactory.getLogger(ImageUtil.class);;
 	
-	public static String generateThumbnail(InputStream thumbnailInputStream,String fileName,String targetAddr) {
+	public static String generateThumbnail(ImageHolder thumbnail,String targetAddr) {
 		String realFileName = getRandomFileName();
-		String extension = getFileExtension(fileName);
+		String extension = getFileExtension(thumbnail.getImageName());
 		makeDirPath(targetAddr);
 		String relativeAddr = targetAddr + realFileName + extension;
 		logger.debug("current relativeAddr is:" + relativeAddr);
 		File dest = new File(PathUtil.getImgBasePath() + relativeAddr);
 		logger.debug("current complete addr is:" + PathUtil.getImgBasePath() + relativeAddr);
 		try {
-			Thumbnails.of(thumbnailInputStream).size(200, 200).
+			Thumbnails.of(thumbnail.getImage()).size(200, 200).
 			outputQuality(0.8f).toFile(dest);
+		}catch(IOException e) {
+			logger.error(e.toString());
+			e.printStackTrace();
+		}
+		return relativeAddr;
+	}
+	
+	public static String generateNormalImg(ImageHolder thumbnail,String targetAddr) {
+		String realFileName = getRandomFileName();
+		String extension = getFileExtension(thumbnail.getImageName());
+		makeDirPath(targetAddr);
+		String relativeAddr = targetAddr + realFileName + extension;
+		logger.debug("current relativeAddr is:" + relativeAddr);
+		File dest = new File(PathUtil.getImgBasePath() + relativeAddr);
+		logger.debug("current complete addr is:" + PathUtil.getImgBasePath() + relativeAddr);
+		try {
+			Thumbnails.of(thumbnail.getImage()).size(337,640).
+			outputQuality(0.9f).toFile(dest);
 		}catch(IOException e) {
 			logger.error(e.toString());
 			e.printStackTrace();
