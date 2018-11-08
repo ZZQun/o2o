@@ -59,6 +59,7 @@ public class ProductServiceTest extends BaseTest{
 	}
 	
 	@Test
+	@Ignore
 	public void testModifyProduct() throws ShopOperationException,FileNotFoundException{
 		Product product = new Product();
 		Shop shop = new Shop();

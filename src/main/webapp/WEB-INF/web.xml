@@ -21,22 +21,22 @@
 		<!-- 图片宽度 -->
 		<init-param>
 			<param-name>kaptcha.image.width</param-name>
-			<param-value>135</param-value>
+			<param-value>110</param-value>
 		</init-param>
 		<!-- 使用哪些字符生成验证码 -->
 		<init-param>
 			<param-name>kaptcha.textproducer.char.string</param-name>
-			<param-value>ACDEFHKPRSTWX345679</param-value>
+			<param-value>abcdefghizk1234657890</param-value>
 		</init-param>
 		<!-- 图片高度 -->
 			<init-param>
 			<param-name>kaptcha.image.height</param-name>
-		<param-value>50</param-value>
+		<param-value>40</param-value>
 		</init-param>
 		<!-- 字体大小 -->
 		<init-param>
 			<param-name>kaptcha.textproducer.font.size</param-name>
-			<param-value>43</param-value>
+			<param-value>40</param-value>
 		</init-param>
 		<!-- 干扰线的颜色 -->
 		<init-param>

@@ -52,6 +52,10 @@ $(function(){
  			}
  		});
  	}
+ 	function go(){
+ 		window.location.href = '/o2o/shopadmin/shoplist'; 
+	}
+ 	
  	$('#submit').click(function(){
  		var shop = {};
  		if(isEdit){
@@ -90,9 +94,16 @@ $(function(){
  			cache:false,
  			success:function(data){
  				if(data.success){
- 					$.toast('提交成功！'); 					
+ 					if(isEdit){
+ 						$.toast('提交成功！'); 
+ 					}else {
+ 						//0.5秒后跳转
+ 						$.toast('提交成功！');
+ 						setTimeout(go,500);
+ 						
+					}
  				}else{
- 					$.toast('提交失败！' + data.errMsg);
+ 					$.toast('提交失败！' + data.errorMsg);
  				}
  				$('#captcha_img').click();
  			}

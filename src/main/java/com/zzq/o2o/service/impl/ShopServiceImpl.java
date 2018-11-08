@@ -76,13 +76,12 @@ public class ShopServiceImpl implements ShopService{
 	@Override
 	public ShopExecution modifyShop(Shop shop,ImageHolder thumbnail)
 			throws ShopOperationException {
-		//1.判断是否处理图片
 		if(shop == null || shop.getShopId() == null) {
 			return new ShopExecution(ShopStateEnum.NULL_SHOP);
 		}else {
 			//1.判断是否处理图片
 			try {
-			if(thumbnail.getImage() != null && thumbnail.getImageName() != null && !"".equals(thumbnail.getImageName())) {
+			if(thumbnail != null && thumbnail.getImage() != null && thumbnail.getImageName() != null && !"".equals(thumbnail.getImageName())) {
 				Shop tempShop = shopDao.queryByShopId(shop.getShopId());
 				if(tempShop.getShopImg() != null) {
 					ImageUtil.deleteFileOrPath(tempShop.getShopImg());

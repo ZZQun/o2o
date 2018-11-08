@@ -14,10 +14,13 @@ import com.zzq.o2o.entity.Area;
 public class AreaServiceTest extends BaseTest{
 	@Autowired
 	private AreaService areaService;
-	
+	@Autowired
+	private CacheService cacheService;
 	@Test
 	public void testGetAreaList() {
 		List<Area> areaList = areaService.getAreaList();
-		assertEquals(2, areaList.size());
+		assertEquals(4, areaList.size());
+		cacheService.removeFromCache(areaService.AREALISTKEY);
+		areaService.getAreaList();
 	}
 }

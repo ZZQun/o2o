@@ -29,6 +29,7 @@ public class ShopServiceTest extends BaseTest{
 	private ShopService shopService;
 	
 	@Test
+	@Ignore
 	public void testGetShopList() {
 		Shop shopCondition = new Shop();
 		ShopCategory sc = new ShopCategory();
@@ -41,10 +42,9 @@ public class ShopServiceTest extends BaseTest{
 	}
 	
 	@Test
-	@Ignore
 	public void testModifyShop() throws ShopOperationException,FileNotFoundException{
 		Shop shop = new Shop();
-		shop.setShopId(13L);
+		shop.setShopId(2L);
 		shop.setShopName("小老狗");
 		File shopImg = new File("D:\\Others\\photo\\xiaohuangren.jpg");
 		InputStream is = new FileInputStream(shopImg);

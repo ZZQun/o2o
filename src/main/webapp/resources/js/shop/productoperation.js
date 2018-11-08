@@ -24,7 +24,7 @@ $(function() {
 				$('#promotion-price').val(
 						product.promotionPrice);
 
-				var optionHtml = '<option></option>';
+				var optionHtml = '<option>全部类别</option>';
 				var optionArr = data.productCategoryList;
 				var optionSelected = '';
 				if(product.productCategory != null && product.productCategory.productCategoryId != null){
@@ -50,7 +50,7 @@ $(function() {
 		$.getJSON(categoryUrl, function(data) {
 			if (data.success) {
 				var data = data.data;
-				var optionHtml = '';
+				var optionHtml = '<option>全部类别</option>';
 				data.map(function(item, index) {
 					optionHtml += '<option data-value="'
 							+ item.productCategoryId + '">'

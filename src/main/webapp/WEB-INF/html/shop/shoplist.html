@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>商店列表</title>
+        <title>商铺列表</title>
         <meta name="viewport" content="initial-scale=1, maximum-scale=1">
         <link rel="shortcut icon" href="/favicon.ico">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -14,13 +14,13 @@
     </head>
 <body>
     <header class="bar bar-nav">
-        <h1 class="title">商店列表</h1>
+        <h1 class="title">商铺列表</h1>
     </header>
     <div class="content">
         <div class="content-block">
         	<p>
         		你好,<span id="user-name"></span>
-        		<a class="pull-right" href="/o2o/shop/shopedit">增加商铺</a>
+        		<a class="pull-right" href="/o2o/shopadmin/shopoperation">增加商铺</a>
         	</p>
             <div class="row row-shop">
                 <div class="col-40">商店名称</div>
@@ -33,13 +33,16 @@
         </div>
         <div class="content-block">
 			<div class="row">
-				<div class="col-50">
-					<a href="" id="log-out"
-						class="button button-big button-fill button-danger">退出系统</a>
-				</div>
-                <div class="col-50">
+                <div class="col-33">
+                    <a href="/o2o/local/accountbind?usertype=2" class="button button-big button-fill">绑定帐号</a>
+                </div>
+                <div class="col-33">
                     <a href="/o2o/shop/changepsw" class="button button-big button-fill button-success">修改密码</a>
                 </div>
+                <div class="col-33">
+					<a href="" id="log-out" usertype="2"
+						class="button button-big button-fill button-danger">退出系统</a>
+				</div>
 			</div>
 		</div>
     </div>

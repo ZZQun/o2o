@@ -76,7 +76,7 @@ public class ShopManagementController {
 	private Map<String ,Object> getShopList(HttpServletRequest request){
 		Map<String,Object> modelMap = new HashMap<String,Object>();
 		PersonInfo user = new PersonInfo();
-		user.setUserId(1L);
+		user.setUserId(8L);
 		user.setName("test");
 		request.getSession().setAttribute("user",user);
 		user = (PersonInfo) request.getSession().getAttribute("user");
@@ -203,7 +203,7 @@ public class ShopManagementController {
 			return modelMap;
 		}else {
 			modelMap.put("success", false);
-			modelMap.put("errorMsg","请输入店铺信息！");
+			modelMap.put("errorMsg","请输入完整店铺信息！");
 			return modelMap;
 		}
 	}
@@ -263,7 +263,7 @@ public class ShopManagementController {
 			return modelMap;
 		}else {
 			modelMap.put("success", false);
-			modelMap.put("errorMsg","请输入店铺Id！");
+			modelMap.put("errorMsg","商品铺Id为空！");
 			return modelMap;
 		}
 	}

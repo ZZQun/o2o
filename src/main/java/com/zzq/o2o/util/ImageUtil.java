@@ -35,8 +35,8 @@ public class ImageUtil {
 		File dest = new File(PathUtil.getImgBasePath() + relativeAddr);
 		logger.debug("current complete addr is:" + PathUtil.getImgBasePath() + relativeAddr);
 		try {
-			Thumbnails.of(thumbnail.getImage()).size(200, 200).
-			outputQuality(0.8f).toFile(dest);
+			Thumbnails.of(thumbnail.getImage()).size(400, 400).
+			outputQuality(0.9f).toFile(dest);
 		}catch(IOException e) {
 			logger.error(e.toString());
 			e.printStackTrace();
